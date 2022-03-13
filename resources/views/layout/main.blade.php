@@ -35,7 +35,7 @@
     <nav id="navigationBar" class="navbar navbar-expand-md @if(Request::path() == 'login' || Request::path() == '/') fixed-top @else sticky-top @endif @if(Request::path() == '/') navbar-dark @else navbar-light bg-white shadow-sm @endif" id="navigationBar">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="/">
-          <img class="me-2" src="https://www.flaticon.com/svg/static/icons/svg/945/945170.svg" alt="logo" height="50">
+          <!-- <img class="me-2" src="https://www.flaticon.com/svg/static/icons/svg/945/945170.svg" alt="logo" height="50"> -->
           @if(Request::path() == '/') 
           Rebuk 
           @else <div class="d-lg-none">Rebuk</div>
@@ -85,7 +85,7 @@
 
                 <div class="dropdown-menu dropdown-menu-end shadow-sm rounded-3">
                   <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#topupModal" href="">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/550/550638.svg" height="30">
+                    <img src="/dollar.png" height="30">
                     <span>{{ auth()->user()->coin }}</span>
                   </a>
 
@@ -136,10 +136,10 @@
           </div>
 
           <div class="modal-body">
-            <h5 class="mb-3 d-flex align-items-center"><img src="https://www.flaticon.com/svg/static/icons/svg/550/550638.svg" height="20px">&nbsp; 10 Coins <form class="ms-auto" action="/topup/10" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 10.000,00</button></form></h5>
-            <h5 class="mb-3 d-flex align-items-center"><img src="https://www.flaticon.com/svg/static/icons/svg/550/550638.svg" height="20px">&nbsp; 20 Coins <form class="ms-auto" action="/topup/20" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 15.000,00</button></form></h5>
-            <h5 class="mb-3 d-flex align-items-center"><img src="https://www.flaticon.com/svg/static/icons/svg/550/550638.svg" height="20px">&nbsp; 40 Coins <form class="ms-auto" action="/topup/40" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 35.000,00</button></form></h5>
-            <h5 class="mb-3 d-flex align-items-center"><img src="https://www.flaticon.com/svg/static/icons/svg/550/550638.svg" height="20px">&nbsp; 80 Coins <form class="ms-auto" action="/topup/80" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 75.000,00</button></form></h5>
+            <h5 class="mb-3 d-flex align-items-center"><img src="/dollar.png" height="20px">&nbsp; 10 Coins <form class="ms-auto" action="/topup/10" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 10.000,00</button></form></h5>
+            <h5 class="mb-3 d-flex align-items-center"><img src="/dollar.png" height="20px">&nbsp; 20 Coins <form class="ms-auto" action="/topup/20" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 15.000,00</button></form></h5>
+            <h5 class="mb-3 d-flex align-items-center"><img src="/dollar.png" height="20px">&nbsp; 40 Coins <form class="ms-auto" action="/topup/40" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 35.000,00</button></form></h5>
+            <h5 class="mb-3 d-flex align-items-center"><img src="/dollar.png" height="20px">&nbsp; 80 Coins <form class="ms-auto" action="/topup/80" method="post">@csrf <button type="submit" class="btn btn-sm btn-primary" href="">Rp. 75.000,00</button></form></h5>
           </div>
         </div>
       </div>

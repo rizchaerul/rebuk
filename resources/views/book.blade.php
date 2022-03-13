@@ -31,7 +31,7 @@
 
         <h6>Price:</h6>
         <span>
-          <img src="https://www.flaticon.com/svg/static/icons/svg/550/550638.svg" height="30">
+          <img src="/dollar.png" height="30">
           <span>10/Day</span>
         </span>
         
