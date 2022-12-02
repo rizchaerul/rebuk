@@ -3,7 +3,7 @@
 @section('content')
   <style>
     .cover {
-      /* background-image: url('https://i.pinimg.com/originals/4a/94/26/4a94268541d7a0ed95a8be5138e8a288.jpg'); */
+      background-image: url('https://i.pinimg.com/originals/4a/94/26/4a94268541d7a0ed95a8be5138e8a288.jpg');
       background-image: url('https://cdn.hipwallpaper.com/i/67/14/JnPeos.jpg');
       background-repeat: no-repeat;
       background-size: cover;
@@ -33,4 +33,3 @@
     </div>
   </div>
 @endsection
-
