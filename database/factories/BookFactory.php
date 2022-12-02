@@ -14,7 +14,7 @@ $factory->define(Book::class, function (Faker $faker) {
 
     $randNum = $faker->numberBetween(1, 10);
     $id = uniqid();
-    copy("./public/img/{$randNum}.jpg", "./storage/app/public{$id}.jpg");
+    copy("./public/img/{$randNum}.jpg", "./storage/app/public/bookImg/{$id}.jpg");
     // Storage::copy('/bookSample/'.$randNum.'.jpg', '/bookImg/'.$id.'.jpg');
     // Storage::put($filename, file_get_contents($request->file('image')));
     
